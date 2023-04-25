@@ -244,6 +244,13 @@ hb_ot_metrics_get_y_variation (hb_font_t *font, hb_ot_metrics_tag_t metrics_tag)
 {
   return font->em_scalef_y (hb_ot_metrics_get_variation (font, metrics_tag));
 }
+
+uint16_t
+hb_ot_metrics_get_fs_type (hb_font_t *font)
+{
+  return font->face->table.OS2->fsType;
+} 
+
 #endif
 
 #endif

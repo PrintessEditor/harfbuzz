@@ -119,6 +119,9 @@ hb_ot_metrics_get_x_variation (hb_font_t *font, hb_ot_metrics_tag_t metrics_tag)
 HB_EXTERN hb_position_t
 hb_ot_metrics_get_y_variation (hb_font_t *font, hb_ot_metrics_tag_t metrics_tag);
 
+HB_EXTERN uint16_t
+hb_ot_metrics_get_fs_type (hb_font_t *font);
+
 HB_END_DECLS
 
 #endif /* HB_OT_METRICS_H */
